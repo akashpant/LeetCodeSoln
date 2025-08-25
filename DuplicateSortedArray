@@ -1,0 +1,19 @@
+using index and comparison
+
+public int RemoveDuplicates(int[] nums) {
+        
+        int index = 0;
+
+        for(int i = 1; i < nums.Length; i++){
+
+            int num = nums[i];
+            int lastNum = nums[index];
+
+            if( num != lastNum){
+
+                index++;
+                nums[index] = num;
+            }
+        }
+        return index + 1;
+    }
