@@ -1,0 +1,2 @@
+# LeetCodeSoln
+Practicing Leetcode easy
