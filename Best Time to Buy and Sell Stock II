@@ -1,0 +1,18 @@
+public class Solution {
+    public int MaxProfit(int[] prices) {
+  int l = 0; int k = 0;
+  for (int i =0; i <prices.Length - 1; i++)
+  {
+    int j = i + 1; 
+    if(prices[j] > prices[i])
+    {
+       k = prices[j] - prices[i];
+        l = l + k;
+
+    }
+  }
+    return l;
+  }
+}
+
+// best solution with 100% faster runtime.
